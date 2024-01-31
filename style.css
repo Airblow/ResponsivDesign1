@@ -1,0 +1,45 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "topLeft topRight"
+    "bottomLeft bottomRight";
+   
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 3vw;
+
+}
+
+section:nth-child(1){
+    grid-area: topLeft;
+    background-color: Red;
+
+}
+
+section:nth-child(2){
+    grid-area: topRight;
+    background-color: Blue;
+    
+}
+
+section:nth-child(3){
+    grid-area: bottomLeft;
+    background-color: Green;
+    
+}
+
+section:nth-child(4){
+    grid-area: bottomRight;
+    background-color: Yellow;
+    
+}
